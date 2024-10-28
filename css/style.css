@@ -61,13 +61,15 @@ ul {
     margin: 0;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: rgb(211, 230, 236);
     width: 100%;
 }
 
 /* Styling for list links */
 ul li a {
-    display: block;
+    display: flex;
+    flex-direction: column;
     color: black;
     text-align: center;
     padding: 14px 20px;
