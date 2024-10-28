@@ -79,11 +79,23 @@ ul li a:hover {
     background-color: #555;
 }
 
+/* Code for fade animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }
+}
+
 header {
     background-color: rgb(22, 167, 123);
     text-align: center;
     margin: 0 auto;
+    animation: fadeIn 1s ease;
 }
+
 
 /* Styling large header */
 header h1 {
