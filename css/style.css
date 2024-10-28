@@ -1,0 +1,178 @@
+/* General Body Style */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+/* Navigation bar styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(211, 230, 236);
+    width: 100%;
+}
+
+/* Styling for list links */
+ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Styling for hovering over list links */
+ul li a:hover {
+    background-color: #555;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(22, 167, 123);
+    text-align: center;
+}
+
+/* Styling large header */
+header h1 {
+    margin-bottom: 0px;
+}
+
+/* Styling h2 margins */
+header h2 {
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+/* Styling team results header */
+#team-results h2 {
+    margin: 10px;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 0 auto 15px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Styling for both table header and table data */
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Tabler header styling */
+table th {
+    background-color: #333;
+    color: white;
+}
+
+/* Styling to change color of odd rows of table */
+table tr:nth-child(odd) {
+    background-color: #444;
+}
+
+/* Styling for hovering over table row */
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Summary Section */
+.summary,
+#individual-results {
+    text-align: left;
+}
+
+
+/* Styling overall summary header and text */
+.summary h2,
+.summary p {
+    margin: 0;
+}
+
+
+/* Styling the gallery header */
+#gallery h2 {
+    margin-top: 20px;
+    grid-column: 1/-1;
+    text-align: left
+}
+
+/* Styling overall gallery with 5 columns */
+#gallery {
+    width: 90%;
+    display: grid;  
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));         
+    margin: auto;
+}
+
+.summary {
+    width: 90%;       
+    margin: 0 auto; 
+    text-align: left;
+}
+
+/* Athlete Results Grid */
+#individual-results {
+    width: 90%;
+    margin: 0 auto; 
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Athlete Card */
+#individual-results .athlete {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #222;
+}
+
+/* Athlete Details */
+.athlete dl {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.athlete dt {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+/* Styling that applies to description term and list */
+.athlete dt,
+.athlete dd {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+/* Athlete Image Styling */
+.athlete figure img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px rgba(241, 0, 221, 0.725);
+    border: 3px solid #fff;
+}
+
+/* Styling for header of individual results */
+#individual-results h2 {
+    margin-top: 20px;
+    grid-column: 1/-1;
+    text-align: left
+}
