@@ -24,6 +24,12 @@ body {
     }
 }
 
+/* Responsive Design for Mobile */
+@media only screen and (width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* Apply the pulsing animation on hover */
 a:hover {
