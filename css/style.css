@@ -8,6 +8,7 @@ body {
     background-color: black;
 }
 
+
 a[href="#main"] {
     color: #D1D1FF;
 }
@@ -50,7 +51,6 @@ a[href="https://sites.google.com/aaps.k12.mi.us/skylinecrosscountry2021/home"] {
 /* Apply the pulsing animation on hover */
 a:hover {
     animation: pulse 0.6s infinite; /* Run the animation */
-    color: #fff; /* Change color on hover */
 }
 
 
@@ -64,6 +64,14 @@ ul {
     flex-wrap: wrap;
     background-color: rgb(211, 230, 236);
     width: 100%;
+}
+
+ul a:hover {
+    color: #007bff; /* Color on hover (e.g., blue) */
+}
+
+ul a:focus {
+    background-color: #6eadf0; /* Color when active (e.g., darker blue) */
 }
 
 /* Styling for list links */
@@ -310,4 +318,23 @@ table tr:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         border: 3px solid #000;
     }
+}
+
+.athlete dt,
+.athlete dd {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1000px) {
+    ul {
+        margin: 0 auto;
+    }
+    /* Athlete Image becomes larger size and increased border radius */
+    .athlete figure img {
+        width: 250px;
+        height: 250px;
+        border-radius: 8%;
+    }
+
 }
